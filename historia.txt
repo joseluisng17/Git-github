@@ -75,9 +75,16 @@
 
 --------- *** GitHub *** -----------------------
 
-    // agregar repositorio a GitHub, proporcionar url que proporciona github
+    ---------- agregar repositorio a GitHub, proporcionar url que proporciona github ----------
 
     git remote add origin https://github.com/joseluisng17/Git-github.git
+    
+    git branch -M main
 
-    // subir a github
+    ----------- subir a github ----------
     git push -u origin main
+    
+    ---------- traer proyecto de github a local git ----------
+    git pull
+   
+    
