@@ -1,4 +1,64 @@
-Este es la primera linea del proyecto 
+----------- iniciar un proyecto en un directorio ----------------
+
+	// se ejecuta al comenzar el proyecto, solo se ejecuta una vez en un proyecto, y git inicia a hacer un seguimiento
+
+	git init   
 
 
-segunda modificación
+	// inicizializar en dos areas en el area de ensayo(staging area) que es donde se van a almacenar de forma temporal,
+	//  la segunda area es el repositorio local, que es donde se guardan los repositorios
+
+
+------------  decirle a git a que archivos les haga seguimiento ----------------------
+
+	git add <nombreArchivo.extensión>  // así git hace seguimiento a ese archivo
+
+
+	git add .   // git hace seguimiento a todos los archivos
+
+
+
+----------  Trasladar los archivos del área de ensayo(staging area) al respositorio local ------------
+
+	// se dice que se toma una fotografía del proyecto y se guarda 
+
+	git commit "agregar descripción del snapShot"  // se agrega una descripción para que puedas acceder a esa grabación por esa descripción
+
+
+---------- Si es la primera vez que usar git pedira una username y un email -------------------
+
+
+	git config --global user.username "jose luis"
+	git config --global email.useremail "joseluisng17@gmail.com"
+ 
+
+---------- Ver a que archivos y directorios esta haciendo seguimiento git -----------------
+
+	git status -s
+
+	// nota: si aparecen archivos con signo ?  es por que git no les esta haciendo seguimiento a esos archivos
+	// entonces este comando solo nos muestra aquello que no esta en el repositorio o archivos que no se ha respaldado
+
+	// si muestra la letra A es archivo agregado y si muestra la letra M es de modificado
+
+	*** ver un status general *** 
+	
+	git status 
+
+----------  mostrar cuantas snapShot, cuantas copias o cuantas fotos estan en el repositorio --------------
+
+	git log --oneline
+
+
+---------- restaurar a el proyecto a una foto anterior ------------------------
+
+	git reset --hard <codigoDeFotoInstantania>  //si no se tiene el codigo hacer git log --oneline para ver codigos.
+	
+	  //nota: al aplicar el comando anterior se regresa al repositorio que le indicamos pero borra los repositorios que tenia por delante
+	      para evitar que eso pase se puede usar el siguiente
+
+	git revert <codigoDeFotoInstantania>
+
+	  //nota: lo que hace el comendo anterior revierte cambios, llevandore al repositori deseado pero creando un nuevo repositorio y sin borrar los demas
+ 
+	
