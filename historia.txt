@@ -79,3 +79,5 @@
 
     git remote add origin https://github.com/joseluisng17/Git-github.git
 
+    // subir a github
+    git push -u origin main
