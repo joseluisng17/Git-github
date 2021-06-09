@@ -60,5 +60,22 @@
 	git revert <codigoDeFotoInstantania>
 
 	  //nota: lo que hace el comendo anterior revierte cambios, llevandore al repositori deseado pero creando un nuevo repositorio y sin borrar los demas
- 
-	
+
+
+---------- Modificar una descripción de algun commit ---------
+
+    // se abre un VIM
+    git commit --amend
+
+    :i    //eso lo que le dice a vim es que podemos empezar a editar 
+    // presionamos la tecla suprimir para borrar y lugo la letra esc para salir del modo edición
+    // escribimos otra vez :i   y comenzamos a escribir el nuevo nombre del commit despues se preciona enter y luego esc
+    // para salir del editor y que guarde cambios presionamos :wq
+
+
+--------- *** GitHub *** -----------------------
+
+    // agregar repositorio a GitHub, proporcionar url que proporciona github
+
+    git remote add origin https://github.com/joseluisng17/Git-github.git
+
