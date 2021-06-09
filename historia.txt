@@ -96,5 +96,11 @@
 -------- Crear tag para github ---------------
 
     git tag 09-06-21v1 -m "version 1 del proyecto"
+
+------ subir los cambios con los tags  -------------------
    
+   git push --tags
     
+------ clonar un proyecto a para que se descargue a nuestro equipo desde github --------------
+
+    git clone <Urldelproyecto>
