@@ -73,6 +73,8 @@
     // para salir del editor y que guarde cambios presionamos :wq
 
 
+
+
 --------- *** GitHub *** -----------------------
 
     ---------- agregar repositorio a GitHub, proporcionar url que proporciona github ----------
@@ -92,7 +94,6 @@
     git pull <link de su repositorio>
 
 
-
 -------- Crear tag para github ---------------
 
     git tag 09-06-21v1 -m "version 1 del proyecto"
@@ -104,3 +105,24 @@
 ------ clonar un proyecto a para que se descargue a nuestro equipo desde github --------------
 
     git clone <Urldelproyecto>
+
+
+
+
+-------- *** Ramas o Branch *** ----------------
+
+    ------- crear rama -----
+        git branch nombreRama
+
+    ------ ver ramas del proyecto y en cual te encuentras --------
+        git branch
+
+    ---- moverse de una rama a otra ----
+        git checkout nombreRama
+
+    ----- Unir dos ramas Merge ------
+        nota: para poder hacer un merge tienes que estar en la rama master
+
+        git merge nombreDeRamaA-Fucionar  
+        
+        por ejemplo: git merge ramaJavascript  // se une la rama principal con la rama javascript
