@@ -126,3 +126,7 @@
         git merge nombreDeRamaA-Fucionar  
         
         por ejemplo: git merge ramaJavascript  // se une la rama principal con la rama javascript
+
+    ------- Borrar una rama -------------
+
+        git branch -d nombreDeRama
