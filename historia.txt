@@ -86,7 +86,7 @@
     ----------- subir a github ----------
     git push -u origin main
 
-    git push origin master
+    git push origin main o git push origin master
     
     ---------- traer proyecto de github a local git ----------
     git pull
